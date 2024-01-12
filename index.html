@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles.css" />
-    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
     <title>Nucba NFT</title>
   </head>
   <body>
     <header>
       <img class="logo" src="./assets/img/logo.png" alt="logo nucba" />
       <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <img src="./assets/img/menu.png" alt="" class="menu-icon"/>
+        </label>
+        <input type="checkbox" name="" id="menu-toggle" />
         <ul class="navbar-list">
           <li><a href="#">Home</a></li>
           <li><a href="#">Descubre</a></li>
@@ -18,7 +22,90 @@
           <li><a href="#">Youtube</a></li>
           <li><a href="#">Contactanos</a></li>
         </ul>
-        <img src="./assets/img/cart-icon.svg" alt="carrito de compras" />
+        <label for="cart-toggle">
+          <img
+            class="cart-icon"
+            src="./assets/img/cart-icon.svg"
+            alt="carrito de compras"
+          />
+        </label>
+        <input type="checkbox" id="cart-toggle"/>
+        <div class="cart">
+          <h2>Tus NFTs</h2>
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="" />
+            <h3 class="item-title">Messi</h3>
+            <p class="item-bid">Current Bid</p>
+            <span class="item-price">4.8 ETH</span>
+          </div>
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="" />
+            <h3 class="item-title">Messi</h3>
+            <p class="item-bid">Current Bid</p>
+            <span class="item-price">4.8 ETH</span>
+          </div>
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="" />
+            <h3 class="item-title">Messi</h3>
+            <p class="item-bid">Current Bid</p>
+            <span class="item-price">4.8 ETH</span>
+          </div>
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="" />
+            <h3 class="item-title">Messi</h3>
+            <p class="item-bid">Current Bid</p>
+            <span class="item-price">4.8 ETH</span>
+          </div>
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="" />
+            <h3 class="item-title">Messi</h3>
+            <p class="item-bid">Current Bid</p>
+            <span class="item-price">4.8 ETH</span>
+          </div>
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+          <div class="cart-item">
+            <img src="./assets/img/cart/cart-img.png" alt="" />
+            <h3 class="item-title">Messi</h3>
+            <p class="item-bid">Current Bid</p>
+            <span class="item-price">4.8 ETH</span>
+          </div>
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+          <span class="divider"></span>
+          <div class="cart-total">
+            <p>Total</p>
+            <span>18.3 ETH</span>
+          </div>
+          <button class="btn-add">Comprar</button>
+        </div>
+        <div class="overlay"></div>
       </nav>
     </header>
     <main>
@@ -126,10 +213,10 @@
         <div class="products-container">
           <!-- product 1 -->
           <div class="product">
-            <img src="./assets/img/products/daovinci.png" alt="">
-            
+            <img src="./assets/img/products/daovinci.png" alt="" />
+
             <div class="product-info">
-             <!-- Linea superior -->
+              <!-- Linea superior -->
               <div class="product-top">
                 <h3>Golden Messi</h3>
                 <p>Current Bid</p>
@@ -138,7 +225,7 @@
               <div class="product-mid">
                 <!-- Info usuario -->
                 <div class="product-user">
-                  <img src="./assets/img/user.png" alt="">
+                  <img src="./assets/img/user.png" alt="" />
                   <p>@thetroncous</p>
                 </div>
                 <!-- Precio -->
@@ -148,7 +235,7 @@
               <div class="product-bot">
                 <!-- tiempo -->
                 <div class="offer-time">
-                  <img src="./assets/img/fire.png" alt="">
+                  <img src="./assets/img/fire.png" alt="" />
                   <p>05:12:07</p>
                 </div>
                 <!-- botón -->
@@ -157,10 +244,10 @@
             </div>
           </div>
           <div class="product">
-            <img src="./assets/img/products/fangster.png" alt="">
-            
+            <img src="./assets/img/products/fangster.png" alt="" />
+
             <div class="product-info">
-             <!-- Linea superior -->
+              <!-- Linea superior -->
               <div class="product-top">
                 <h3>Diego Maradona</h3>
                 <p>Current Bid</p>
@@ -169,7 +256,7 @@
               <div class="product-mid">
                 <!-- Info usuario -->
                 <div class="product-user">
-                  <img src="./assets/img/user.png" alt="">
+                  <img src="./assets/img/user.png" alt="" />
                   <p>@kirik8</p>
                 </div>
                 <!-- Precio -->
@@ -179,7 +266,7 @@
               <div class="product-bot">
                 <!-- tiempo -->
                 <div class="offer-time">
-                  <img src="./assets/img/fire.png" alt="">
+                  <img src="./assets/img/fire.png" alt="" />
                   <p>05:12:07</p>
                 </div>
                 <!-- botón -->
@@ -188,10 +275,10 @@
             </div>
           </div>
           <div class="product">
-            <img src="./assets/img/products/sherbet.png" alt="">
-            
+            <img src="./assets/img/products/sherbet.png" alt="" />
+
             <div class="product-info">
-             <!-- Linea superior -->
+              <!-- Linea superior -->
               <div class="product-top">
                 <h3>L10nel Messi</h3>
                 <p>Current Bid</p>
@@ -200,7 +287,7 @@
               <div class="product-mid">
                 <!-- Info usuario -->
                 <div class="product-user">
-                  <img src="./assets/img/user.png" alt="">
+                  <img src="./assets/img/user.png" alt="" />
                   <p>@FD10S</p>
                 </div>
                 <!-- Precio -->
@@ -210,7 +297,7 @@
               <div class="product-bot">
                 <!-- tiempo -->
                 <div class="offer-time">
-                  <img src="./assets/img/fire.png" alt="">
+                  <img src="./assets/img/fire.png" alt="" />
                   <p>05:12:07</p>
                 </div>
                 <!-- botón -->
@@ -219,10 +306,10 @@
             </div>
           </div>
           <div class="product">
-            <img src="./assets/img/products/cutemonkey.png" alt="">
-            
+            <img src="./assets/img/products/cutemonkey.png" alt="" />
+
             <div class="product-info">
-             <!-- Linea superior -->
+              <!-- Linea superior -->
               <div class="product-top">
                 <h3>M. Schumacher</h3>
                 <p>Current Bid</p>
@@ -231,7 +318,7 @@
               <div class="product-mid">
                 <!-- Info usuario -->
                 <div class="product-user">
-                  <img src="./assets/img/user.png" alt="">
+                  <img src="./assets/img/user.png" alt="" />
                   <p>@Urastream</p>
                 </div>
                 <!-- Precio -->
@@ -241,7 +328,7 @@
               <div class="product-bot">
                 <!-- tiempo -->
                 <div class="offer-time">
-                  <img src="./assets/img/fire.png" alt="">
+                  <img src="./assets/img/fire.png" alt="" />
                   <p>05:12:07</p>
                 </div>
                 <!-- botón -->
@@ -250,10 +337,10 @@
             </div>
           </div>
           <div class="product">
-            <img src="./assets/img/products/cuteshiba.png" alt="">
-            
+            <img src="./assets/img/products/cuteshiba.png" alt="" />
+
             <div class="product-info">
-             <!-- Linea superior -->
+              <!-- Linea superior -->
               <div class="product-top">
                 <h3>Fernando Alonso</h3>
                 <p>Current Bid</p>
@@ -262,7 +349,7 @@
               <div class="product-mid">
                 <!-- Info usuario -->
                 <div class="product-user">
-                  <img src="./assets/img/user.png" alt="">
+                  <img src="./assets/img/user.png" alt="" />
                   <p>@Gulineta</p>
                 </div>
                 <!-- Precio -->
@@ -272,7 +359,7 @@
               <div class="product-bot">
                 <!-- tiempo -->
                 <div class="offer-time">
-                  <img src="./assets/img/fire.png" alt="">
+                  <img src="./assets/img/fire.png" alt="" />
                   <p>05:12:07</p>
                 </div>
                 <!-- botón -->
@@ -281,10 +368,10 @@
             </div>
           </div>
           <div class="product">
-            <img src="./assets/img/products/toretto.png" alt="">
-            
+            <img src="./assets/img/products/toretto.png" alt="" />
+
             <div class="product-info">
-             <!-- Linea superior -->
+              <!-- Linea superior -->
               <div class="product-top">
                 <h3>Toretto</h3>
                 <p>Current Bid</p>
@@ -293,7 +380,7 @@
               <div class="product-mid">
                 <!-- Info usuario -->
                 <div class="product-user">
-                  <img src="./assets/img/user.png" alt="">
+                  <img src="./assets/img/user.png" alt="" />
                   <p>@HardBena</p>
                 </div>
                 <!-- Precio -->
@@ -303,7 +390,7 @@
               <div class="product-bot">
                 <!-- tiempo -->
                 <div class="offer-time">
-                  <img src="./assets/img/fire.png" alt="">
+                  <img src="./assets/img/fire.png" alt="" />
                   <p>05:12:07</p>
                 </div>
                 <!-- botón -->
